@@ -20,13 +20,15 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.GH_PROFILE }}  # Added authentication token
+          token: ${{ secrets.GH_PROFILE }}
 
-      # Create metrics directory if it doesn't exist
-      - name: Create metrics directory
-        run: mkdir -p ${{ github.workspace }}/metrics_renders
+      # Create both directories
+      - name: Create directories
+        run: |
+          mkdir -p ${{ github.workspace }}/metrics_renders
+          mkdir -p ${{ github.workspace }}/metrics
 
-      # Classic metrics
+      # Generate metrics (disable auto-commit)
       - name: Classic metrics
         uses: lowlighter/metrics@latest
         with:
@@ -35,13 +37,10 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: HongKong
-          output_action: commit
+          output_action: none  # Disable auto-commit
           output_path: ${{ github.workspace }}/metrics_renders/
           filename: metrics.svg
-          committer_branch: main
-          committer_message: "📊 Update GitHub metrics"
 
-      # Full-year isocalendar
       - name: Full year isocalendar
         uses: lowlighter/metrics@latest
         with:
@@ -51,13 +50,10 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           config_timezone: HongKong
-          output_action: commit
+          output_action: none
           output_path: ${{ github.workspace }}/metrics_renders/
           filename: fullyear.svg
-          committer_branch: main
-          committer_message: "📊 Update GitHub metrics"
 
-      # Stargazers worldmap
       - name: Stargazers worldmap
         uses: lowlighter/metrics@latest
         with:
@@ -68,13 +64,10 @@ jobs:
           plugin_stargazers_worldmap: yes
           plugin_stargazers_worldmap_token: ${{ secrets.GOOGLE_MAP_TOKEN }}
           plugin_stargazers_worldmap_sample: 200
-          output_action: commit
+          output_action: none
           output_path: ${{ github.workspace }}/metrics_renders/
           filename: stargazersworldmap.svg
-          committer_branch: main
-          committer_message: "📊 Update GitHub metrics"
 
-      # Compact achievements
       - name: Compact achievements
         uses: lowlighter/metrics@latest
         with:
@@ -86,8 +79,27 @@ jobs:
             scripter, packager, explorer, infographile, manager
           plugin_achievements_display: compact
           plugin_achievements_threshold: X
-          output_action: commit
+          output_action: none
           output_path: ${{ github.workspace }}/metrics_renders/
           filename: achievementscompact.svg
-          committer_branch: main
-          committer_message: "📊 Update GitHub metrics"
+
+      # Copy and commit all files
+      - name: Process and commit metrics
+        run: |
+          echo "=== Before copy ==="
+          echo "Metrics_renders contents:"
+          ls -la ${{ github.workspace }}/metrics_renders/
+          
+          # Copy files
+          cp ${{ github.workspace }}/metrics_renders/*.svg ${{ github.workspace }}/metrics/
+          
+          echo "=== After copy ==="
+          echo "Metrics contents:"
+          ls -la ${{ github.workspace }}/metrics/
+          
+          # Commit changes
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add ${{ github.workspace }}/metrics/
+          git commit -m "📊 Update GitHub metrics"
+          git push
