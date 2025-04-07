@@ -8,7 +8,6 @@
 <!-- World Peaceful words -->
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&center=true&width=435&separator=%3C&lines=It%E2%80%99s+not+a+bug;+%3Cit%E2%80%99s+an+undocumented+feature.)](https://git.io/typing-svg)
 
-
 <!-- Little Logo -->
 <p align="center">
   <a href="https://xinglong-zhang.github.io/">
@@ -37,6 +36,10 @@
 
 
 We are a dynamic computational chemistry research group at [The Chinese University of Hong Kong (CUHK)](https://www.cuhk.edu.hk/). Our focus lies in developing and applying computational tools to delve into organic and organometallic catalysis using quantum chemical methods.
+
+
+<!-- Stats Words -->
+![Metrics](./profile-3d-contrib/profile-night-green.svg )
 
 ## 🔬 Research Focus
 
@@ -85,6 +88,7 @@ Shatin, N.T., Hong Kong, China
 *Visit our official website: [xinglong-zhang.github.io](https://xinglong-zhang.github.io/)*
 
 *Follow our updates on [LinkedIn](https://www.linkedin.com/in/xinglongzhang) and [Twitter](https://twitter.com/XZhangChem).*
+
 
 
 
