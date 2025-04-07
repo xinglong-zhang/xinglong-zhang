@@ -13,43 +13,43 @@ jobs:
     name: generate-github-metrics
     permissions:
       contents: write
+
     steps:
       # Classic metrics
       - name: Classic metrics
         uses: lowlighter/metrics@latest
         with:
-          output_action: commit
-          output_path: metrics
-          filename: metrics.svg
           token: ${{ secrets.GH_PROFILE }}
           user: ${{ github.repository_owner }}
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: HongKong
+          output_action: commit
+          output_path: metrics
+          filename: metrics.svg
+          committer_branch: main
           committer_message: "📊 Update GitHub metrics"
 
       # Full-year isocalendar
       - name: Full year isocalendar
         uses: lowlighter/metrics@latest
         with:
-          output_action: commit
-          output_path: metrics
-          filename: fullyear.svg
           token: ${{ secrets.GH_PROFILE }}
           user: ${{ github.repository_owner }}
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           config_timezone: HongKong
+          output_action: commit
+          output_path: metrics
+          filename: fullyear.svg
+          committer_branch: main
           committer_message: "📊 Update GitHub metrics"
 
       # Stargazers worldmap
       - name: Stargazers worldmap
         uses: lowlighter/metrics@latest
         with:
-          output_action: commit
-          output_path: metrics
-          filename: stargazersworldmap.svg
           token: ${{ secrets.GH_PROFILE }}
           base: ""
           plugin_stargazers: yes
@@ -57,14 +57,16 @@ jobs:
           plugin_stargazers_worldmap: yes
           plugin_stargazers_worldmap_token: ${{ secrets.GOOGLE_MAP_TOKEN }}
           plugin_stargazers_worldmap_sample: 200
+          output_action: commit
+          output_path: metrics
+          filename: stargazersworldmap.svg
+          committer_branch: main
+          committer_message: "📊 Update GitHub metrics"
 
-      # Achievements compact
+      # Compact achievements
       - name: Compact achievements
         uses: lowlighter/metrics@latest
         with:
-          output_action: commit
-          output_path: metrics
-          filename: achievementscompact.svg
           token: ${{ secrets.GH_PROFILE }}
           base: ""
           plugin_achievements: yes
@@ -73,3 +75,9 @@ jobs:
             scripter, packager, explorer, infographile, manager
           plugin_achievements_display: compact
           plugin_achievements_threshold: X
+          output_action: commit
+          output_path: metrics
+          filename: achievementscompact.svg
+          committer_branch: main
+          committer_message: "📊 Update GitHub metrics"
+
