@@ -18,9 +18,9 @@ jobs:
       - name: Classic metrics
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.metrics.svg
           output_action: commit
           output_path: metrics
+          filename: metrics.svg
           token: ${{ secrets.GH_PROFILE }}
           user: ${{ github.repository_owner }}
           template: classic
@@ -32,9 +32,9 @@ jobs:
       - name: Full year isocalendar
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.fullyear.svg
           output_action: commit
           output_path: metrics
+          filename: fullyear.svg
           token: ${{ secrets.GH_PROFILE }}
           user: ${{ github.repository_owner }}
           base: ""
@@ -47,9 +47,9 @@ jobs:
       - name: Stargazers worldmap
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.stargazers.worldmap.svg
           output_action: commit
           output_path: metrics
+          filename: stargazersworldmap.svg
           token: ${{ secrets.GH_PROFILE }}
           base: ""
           plugin_stargazers: yes
@@ -62,9 +62,9 @@ jobs:
       - name: Compact achievements
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.achievements.compact.svg
           output_action: commit
           output_path: metrics
+          filename: achievementscompact.svg
           token: ${{ secrets.GH_PROFILE }}
           base: ""
           plugin_achievements: yes
