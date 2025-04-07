@@ -19,7 +19,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git remote set-url origin https://x-access-token:${{ secrets.secrets.GH_PROFILE }}@github.com/xinglong-zhang/xinglong-zhang.git
+          git remote set-url origin https://x-access-token:${{ secrets.GH_PROFILE }}@github.com/xinglong-zhang/xinglong-zhang.git
           git add -A .
           if git commit -m "auto-generated using yoshi389111/github-profile-3d-contrib"; then
             git push
