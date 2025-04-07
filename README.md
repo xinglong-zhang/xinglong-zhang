@@ -37,10 +37,9 @@
 
 ![Metrics](./metrics/metrics.svg )
 
-![Metrics](./metrics/stargazersworldmap.svg )
+<!-- ![Metrics](./metrics/stargazersworldmap.svg )
 
-
-![Metrics](./metrics/achievementscompact.svg )
+![Metrics](./metrics/achievementscompact.svg ) -->
 
 <!-- GitHub Activity Graph GitHub -->
 <table>
