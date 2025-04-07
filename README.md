@@ -6,7 +6,7 @@
 ![The Big Lebowski GIF](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2dnMDY4M29sbGF6bG1sMnpsZjkwMnlidDRmYzltZ2xyemdvcjlwbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13HgwGsXF0aiGY/giphy.gif)
 
 <!-- World Peaceful words -->
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&separator=%3C&lines=It%E2%80%99s+not+a+bug;+%3Cit%E2%80%99s+an+undocumented+feature.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&center=true&width=435&separator=%3C&lines=It%E2%80%99s+not+a+bug;+%3Cit%E2%80%99s+an+undocumented+feature.)](https://git.io/typing-svg)
 
 
 <!-- Little Logo -->
@@ -49,7 +49,7 @@ We are a dynamic computational chemistry research group at [The Chinese Universi
 
 ## 🏆 Recent News
 
-- **Feb 2025**: Dr. Zhang received the [2025 Thieme Chemistry Journals Award](https://www.thieme.de/). Congratulations! 🎉
+- **Feb 2025**: Dr. Zhang received the [2025 Thieme Chemistry Journals Award](https://www.thieme.de/en/thieme-chemistry/thieme-chemistry-journals-awardees-107362.htm). Congratulations! 🎉
 - **Jan 2025**: Awarded the Academic Equipment Grant (AEG) for 2024-25, securing HKD$1,536,000 to establish High Performance Computing Facilities at CUHK's IT Service Centre.
 - **Dec 2024**: Presented at the [12th Singapore International Chemistry Conference (SICC-12)](https://sicc12.org/) in Singapore.
 
@@ -57,19 +57,19 @@ We are a dynamic computational chemistry research group at [The Chinese Universi
 
 ## 📚 Publications
 
-Our group actively contributes to the scientific community. Explore our publications [here](https://xinglong-zhang.github.io/publications/).
+Our group actively contributes to the scientific community. Explore our publications [here](https://xinglong-zhang.github.io/publications.html).
 
 ## 🎓 Teaching
 
-We are committed to education and offer various courses. Learn more about our teaching endeavors [here](https://xinglong-zhang.github.io/teaching/).
+We are committed to education and offer various courses. Learn more about our teaching endeavors [here](https://xinglong-zhang.github.io/teaching.html).
 
-## 📸 Gallery
+<!-- ## 📸 Gallery -->
 
-A glimpse into our lab activities and events:
+<!-- A glimpse into our lab activities and events: -->
 
-![Group Photo](https://xinglong-zhang.github.io/images/group_photo.jpg)
+<!-- ![Group Photo](https://xinglong-zhang.github.io/images/group_photo.jpg) -->
 
-*More photos available in our [gallery](https://xinglong-zhang.github.io/gallery/).*
+<!-- *More photos available in our [gallery](https://xinglong-zhang.github.io/gallery.html).* -->
 
 ## 📬 Contact
 
