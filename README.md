@@ -35,9 +35,12 @@
 
 
 
-<!-- Stats Words -->
-![Metrics](./profile-3d-contrib/profile-night-green.svg )
+![Metrics](./metrics/metrics.svg )
 
+![Metrics](./metrics/stargazersworldmap.svg )
+
+
+![Metrics](./metrics/achievementscompact.svg )
 
 <!-- GitHub Activity Graph GitHub -->
 <table>
@@ -52,7 +55,6 @@
 </table>
 
 ![Metrics](./profile-3d-contrib/profile-night-green.svg )
-
 
 
 

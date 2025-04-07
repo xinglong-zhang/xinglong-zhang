@@ -22,6 +22,15 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GH_PROFILE }}
 
+      # Clean working directory
+      - name: Clean workspace
+        run: |
+          git clean -fdx
+          rm -rf ${{ github.workspace }}/metrics_renders/
+          rm -rf ${{ github.workspace }}/metrics/
+          mkdir -p ${{ github.workspace }}/metrics_renders
+          mkdir -p ${{ github.workspace }}/metrics
+
       # Create both directories
       - name: Create directories
         run: |
@@ -103,3 +112,4 @@ jobs:
           git add ${{ github.workspace }}/metrics/
           git commit -m "📊 Update GitHub metrics"
           git push
+
