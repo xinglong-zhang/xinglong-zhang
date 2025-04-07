@@ -4,41 +4,73 @@ on:
   schedule:
     - cron: "0 8 * * 1"
   workflow_dispatch:
+  push:
+    branches: ["main"]
 
 jobs:
-  generate-metrics:
+  github-metrics:
     runs-on: ubuntu-latest
     name: generate-github-metrics
+    permissions:
+      contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      # Classic metrics
+      - name: Classic metrics
+        uses: lowlighter/metrics@latest
         with:
+          filename: metrics.metrics.svg
+          output_action: commit
+          output_path: metrics
           token: ${{ secrets.GH_PROFILE }}
           user: ${{ github.repository_owner }}
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: HongKong
-
-          # Plugins
-          plugin_lines: yes
-          plugin_languages: yes
-          plugin_languages_limit: 8
-          plugin_topics: yes
-          plugin_topics_mode: icons
-          plugin_topics_sort: stars
-          plugin_stargazers: yes
-          plugin_followup: yes
-          plugin_traffic: yes
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-          plugin_achievements_threshold: B
-          plugin_habits: yes
-          plugin_habits_charts: yes
-          plugin_habits_facts: yes
-          plugin_isocalendar: yes
-          plugin_projects: yes
-          plugin_projects_limit: 4
-          plugin_notable: yes
-
-          filename: metrics.svg
-          #committer_branch: gh-pages  # commented this out to push into main branch instead of gh-pages branch
           committer_message: "📊 Update GitHub metrics"
+
+      # Full-year isocalendar
+      - name: Full year isocalendar
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.fullyear.svg
+          output_action: commit
+          output_path: metrics
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          config_timezone: HongKong
+          committer_message: "📊 Update GitHub metrics"
+
+      # Stargazers worldmap
+      - name: Stargazers worldmap
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.stargazers.worldmap.svg
+          output_action: commit
+          output_path: metrics
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_stargazers: yes
+          plugin_stargazers_charts: no
+          plugin_stargazers_worldmap: yes
+          plugin_stargazers_worldmap_token: ${{ secrets.GOOGLE_MAP_TOKEN }}
+          plugin_stargazers_worldmap_sample: 200
+
+      # Achievements compact
+      - name: Compact achievements
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.achievements.compact.svg
+          output_action: commit
+          output_path: metrics
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_achievements: yes
+          plugin_achievements_only: >-
+            polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
+            scripter, packager, explorer, infographile, manager
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: X
+
