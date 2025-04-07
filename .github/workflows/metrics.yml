@@ -36,7 +36,7 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_timezone: HongKong
           output_action: commit
-          output_path: metrics
+          output_path: ./metrics/
           filename: metrics.svg
           committer_branch: main
           committer_message: "📊 Update GitHub metrics"
@@ -52,7 +52,7 @@ jobs:
           plugin_isocalendar_duration: full-year
           config_timezone: HongKong
           output_action: commit
-          output_path: metrics
+          output_path: ./metrics/
           filename: fullyear.svg
           committer_branch: main
           committer_message: "📊 Update GitHub metrics"
@@ -69,7 +69,7 @@ jobs:
           plugin_stargazers_worldmap_token: ${{ secrets.GOOGLE_MAP_TOKEN }}
           plugin_stargazers_worldmap_sample: 200
           output_action: commit
-          output_path: metrics
+          output_path: ./metrics/
           filename: stargazersworldmap.svg
           committer_branch: main
           committer_message: "📊 Update GitHub metrics"
@@ -87,7 +87,7 @@ jobs:
           plugin_achievements_display: compact
           plugin_achievements_threshold: X
           output_action: commit
-          output_path: metrics
+          output_path: ./metrics/
           filename: achievementscompact.svg
           committer_branch: main
           committer_message: "📊 Update GitHub metrics"
