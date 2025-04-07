@@ -12,7 +12,7 @@ jobs:
     steps:
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.PRIVATE_REPOS }}
+          token: ${{ secrets.GH_PAGE }}
           user: ${{ github.repository_owner }}
           template: classic
           base: header, activity, community, repositories, metadata
