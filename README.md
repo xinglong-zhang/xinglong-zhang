@@ -1,4 +1,40 @@
-# Welcome to the Zhang Lab! 👋
+<div align="center">
+
+<!-- Welcome words -->
+<h1 style="color: #c1ea09;">Welcome to Xinglong Zhang's GitHub Profile! 👋</h1>
+
+![The Big Lebowski GIF](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2dnMDY4M29sbGF6bG1sMnpsZjkwMnlidDRmYzltZ2xyemdvcjlwbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13HgwGsXF0aiGY/giphy.gif)
+
+<!-- World Peaceful words -->
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&separator=%3C&lines=It%E2%80%99s+not+a+bug;+%3Cit%E2%80%99s+an+undocumented+feature.)](https://git.io/typing-svg)
+
+
+<!-- Little Logo -->
+<p align="center">
+  <a href="https://xinglong-zhang.github.io/">
+    <img src="https://img.shields.io/badge/Personal%20Webpage-8A2BE2" alt="Personal Webpage">
+  </a>
+  <a href="https://github.com/xinglong-zhang">
+    <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub">
+  </a>
+  <a href="https://www.linkedin.com/in/xinglongzhang/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://scholar.google.co.uk/citations?hl=en&user=3XhNj60AAAAJ&view_op=list_works&sortby=pubdate">
+    <img src="https://img.shields.io/badge/Google%20Scholar-4285F4?logo=google-scholar&logoColor=white" alt="Google Scholar">
+  </a>
+  <a href="https://x.com/XZhangChem">
+      <img src="https://img.shields.io/badge/X%20/Twitter-000000?logo=twitter&logoColor=white" alt="X/Twitter">
+  </a>
+  <a href="https://orcid.org/0000-0003-1698-692X">
+      <img src="https://img.shields.io/badge/ORCID-A6CE39?logo=orcid&logoColor=white" alt="ORCID">
+      </a>
+       <a href="https://academictree.org/chemistry/tree.php?pid=685436">
+    <img src="https://img.shields.io/badge/Academic%20Tree-006400?logo=tree&logoColor=white" alt="Academic Tree">
+      </a>
+</p>
+
+
 
 We are a dynamic computational chemistry research group at [The Chinese University of Hong Kong (CUHK)](https://www.cuhk.edu.hk/). Our focus lies in developing and applying computational tools to delve into organic and organometallic catalysis using quantum chemical methods.
 
