@@ -22,21 +22,11 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GH_PROFILE }}
 
-      # Clean working directory
-      - name: Clean workspace
-        run: |
-          git clean -fdx
-          rm -rf ${{ github.workspace }}/metrics_renders/
-          rm -rf ${{ github.workspace }}/metrics/
-          mkdir -p ${{ github.workspace }}/metrics_renders
-          mkdir -p ${{ github.workspace }}/metrics
-
       # Create both directories
       - name: Create directories
         run: |
           mkdir -p ${{ github.workspace }}/metrics_renders
           mkdir -p ${{ github.workspace }}/metrics
-
       # Generate metrics (disable auto-commit)
       - name: Classic metrics
         uses: lowlighter/metrics@latest
@@ -63,33 +53,17 @@ jobs:
           output_path: ${{ github.workspace }}/metrics_renders/
           filename: fullyear.svg
 
-      #- name: Stargazers worldmap
-      #  uses: lowlighter/metrics@latest
-      #  with:
-      #    token: ${{ secrets.GH_PROFILE }}
-      #    base: ""
-      #    plugin_stargazers: yes
-      #    plugin_stargazers_charts: no
-      #    plugin_stargazers_worldmap: yes
-      #    plugin_stargazers_worldmap_token: ${{ secrets.GOOGLE_MAP_TOKEN }}
-      #    plugin_stargazers_worldmap_sample: 200
-      #    output_action: none
-      #    output_path: ${{ github.workspace }}/metrics_renders/
-      #    filename: stargazersworldmap.svg
-
       - name: Compact achievements
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.GH_PROFILE }}
           base: ""
           plugin_achievements: yes
-          plugin_achievements_secrets: true  # Enable secret achievements
           plugin_achievements_only: >-
             polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
             scripter, packager, explorer, infographile, manager
           plugin_achievements_display: compact
-          plugin_achievements_threshold: "X"  # Must be string "0" or "X"
-          plugin_achievements_limit: 12
+          plugin_achievements_threshold: "X"
           output_action: none
           output_path: ${{ github.workspace }}/metrics_renders/
           filename: achievementscompact.svg
@@ -114,4 +88,3 @@ jobs:
           git add ${{ github.workspace }}/metrics/
           git commit -m "📊 Update GitHub metrics"
           git push
-
