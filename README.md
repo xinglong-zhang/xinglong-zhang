@@ -35,18 +35,32 @@
 
 
 
-We are a dynamic computational chemistry research group at [The Chinese University of Hong Kong (CUHK)](https://www.cuhk.edu.hk/). Our focus lies in developing and applying computational tools to delve into organic and organometallic catalysis using quantum chemical methods.
-
-
 <!-- Stats Words -->
 ![Metrics](./profile-3d-contrib/profile-night-green.svg )
+
+
+<!-- GitHub Activity Graph GitHub -->
+<table>
+  <tr>
+    <td>
+      <picture>
+        <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-activity-graph.vercel.app/graph?username=xinglong-zhang&theme=tokyo-night" />
+        <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=xinglong-zhang" />
+        <img src="https://github-readme-activity-graph.vercel.app/graph?username=xinglong-zhang&theme=tokyo-night" />
+      </picture>
+  </tr>
+</table>
+
+
+We are a dynamic computational chemistry research group at [The Chinese University of Hong Kong (CUHK)](https://www.cuhk.edu.hk/). Our focus lies in developing automation tools to increase the efficiency of computational chemistry research. We apply quantum chemical simulations to understand organic and organometallic catalysis.
+
 
 ## 🔬 Research Focus
 
 - **Automation Tools**: Enhancing efficiency in computational chemistry practices.
-- **Catalysis Studies**: Exploring transition-metal catalyzed C–H functionalization and organocatalytic asymmetric synthesis.
-- **Small Molecule Activation**: Investigating supramolecular catalysis.
-- **Machine Learning Applications**: Addressing complex chemical systems and studying dynamic effects on larger scales.
+- **Catalysis Studies**: Exploring transition-metal catalyzed C–H functionalisation and organocatalytic asymmetric synthesis.
+- **Small Molecule Activation**: Investigating small molecule activaion using green catalysis.
+- **Machine Learning Applications**: Addressing complex chemical systems and studying dynamic effects on large scales.
 
 *Discover more about our research [here](https://xinglong-zhang.github.io/research/).*
 
