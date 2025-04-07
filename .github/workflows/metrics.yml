@@ -35,7 +35,7 @@ jobs:
           filename: metrics.fullyear.svg
           output_action: commit
           output_path: metrics
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.GH_PROFILE }}
           user: ${{ github.repository_owner }}
           base: ""
           plugin_isocalendar: yes
@@ -50,7 +50,7 @@ jobs:
           filename: metrics.plugin.stargazers.worldmap.svg
           output_action: commit
           output_path: metrics
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.GH_PROFILE }}
           base: ""
           plugin_stargazers: yes
           plugin_stargazers_charts: no
@@ -65,7 +65,7 @@ jobs:
           filename: metrics.plugin.achievements.compact.svg
           output_action: commit
           output_path: metrics
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.GH_PROFILE }}
           base: ""
           plugin_achievements: yes
           plugin_achievements_only: >-
@@ -73,4 +73,3 @@ jobs:
             scripter, packager, explorer, infographile, manager
           plugin_achievements_display: compact
           plugin_achievements_threshold: X
-
