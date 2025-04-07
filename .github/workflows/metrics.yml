@@ -12,7 +12,7 @@ jobs:
       - name: Generate GitHub Metrics
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.PRIVATE_REPOS }}
           user: xinglong-zhang
           template: classic
           base: header, activity, community, repositories, metadata
