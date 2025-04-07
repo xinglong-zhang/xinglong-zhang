@@ -16,13 +16,11 @@ jobs:
           user: ${{ github.repository_owner }}
           template: classic
           base: header, activity, community, repositories, metadata
-          config_timezone: Europe/Lisbon
+          config_timezone: HongKong
 
           # Plugins
           plugin_lines: yes
           plugin_languages: yes
-          plugin_languages_sections: most-used, recently-used
-          plugin_languages_ignored: html, css
           plugin_languages_limit: 8
           plugin_topics: yes
           plugin_topics_mode: icons
