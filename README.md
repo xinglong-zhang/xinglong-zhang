@@ -37,6 +37,9 @@
 
 ![Metrics](./metrics/metrics.svg )
 
+<!-- [![My Skills](https://skillicons.dev/icons?i=anaconda,atom,bash,bitbucket,css,fortran,git,github,gitlab,html,jenkins,latex,linux,md,mysql,php,pycharm,py,pytorch,regex,stackoverflow,sklearn,svg,tensorflow,ubuntu,vim,vscode,)](https://skillicons.dev) -->
+[![My Skills](https://skillicons.dev/icons?i=anaconda,bash,bitbucket,css,fortran,git,github,gitlab,html,jenkins,latex,linux,md,php,pycharm,py,pytorch,regex,stackoverflow,sklearn,svg,tensorflow,ubuntu,vim,vscode&perline=13)](https://skillicons.dev)
+
 <!-- ![Metrics](./metrics/stargazersworldmap.svg )
 
 ![Metrics](./metrics/achievementscompact.svg ) -->
