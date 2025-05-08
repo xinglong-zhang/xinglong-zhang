@@ -58,7 +58,7 @@
 
 ![Metrics](./profile-3d-contrib/profile-night-green.svg )
 
-<a href="https://flagcounter.me/details/fQV"><img src="https://flagcounter.me/fQV/" alt="Flag Counter"></a>
+<a href="https://info.flagcounter.com/K2LE"><img src="https://s05.flagcounter.com/count2/K2LE/bg_FFFFFF/txt_000000/border_CCCCCC/columns_5/maxflags_30/viewers_Visitors+since+May+2025/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
 
 
 We are a dynamic computational chemistry research group at [The Chinese University of Hong Kong (CUHK)](https://www.cuhk.edu.hk/). Our focus lies in developing automation tools to increase the efficiency of computational chemistry research. We apply quantum chemical simulations to understand organic and organometallic catalysis.
